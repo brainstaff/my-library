@@ -11,5 +11,8 @@
   },
   "peerDependencies": {
     "@brainstaff/my-library": "^0.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
