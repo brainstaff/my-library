@@ -1,0 +1,15 @@
+{
+  "name": "@brainstaff/my-library-plugin",
+  "version": "0.1.0",
+  "description": "My library plugin.",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "author": "Alexey Kornilov <alexey.kornilov@kavolorn.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  },
+  "peerDependencies": {
+    "@brainstaff/my-library": "^0.1.0"
+  }
+}

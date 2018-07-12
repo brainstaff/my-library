@@ -1,0 +1,12 @@
+{
+  "name": "@brainstaff/my-library",
+  "version": "0.1.0",
+  "description": "My library.",
+  "main": "./dist/my-library.js",
+  "typings": "./dist/my-library.d.ts",
+  "author": "Alexey Kornilov <alexey.kornilov@kavolorn.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  }
+}

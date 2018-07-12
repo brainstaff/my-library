@@ -1,0 +1,15 @@
+{
+  "name": "@brainstaff/my-library-monorepo",
+  "version": "0.1.0",
+  "description": "My library monorepo.",
+  "main": "index.js",
+  "author": "Alexey Kornilov <alexey.kornilov@kavolorn.ru>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  }
+}
