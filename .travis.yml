@@ -4,4 +4,5 @@ node_js:
   - "8"
 before_script:
   - yarn lerna bootstrap
+  - yarn lerna exec --scope=@brainstaff/my-library tsc
   - yarn lerna exec tsc
