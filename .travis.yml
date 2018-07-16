@@ -1,8 +1,11 @@
 language: node_js
 node_js:
+  - "node"
   - "10"
-  - "8"
-before_script:
+install:
+  - yarn install
   - yarn lerna bootstrap
-  - yarn lerna exec --scope=@brainstaff/my-library tsc
-  - yarn lerna exec tsc
+script:
+  - yarn lerna run clean
+  - yarn lerna run build
+  - yarn lerna run test
