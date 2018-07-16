@@ -10,5 +10,6 @@ install:
   - yarn lerna bootstrap
 script:
   - yarn lerna run clean
-  - yarn lerna exec tsc
+  - yarn lerna exec --scope=@brainstaff/my-library tsc
+  - yarn lerna exec --scope=@brainstaff/my-libary-plugin tsc
   - yarn lerna run test
