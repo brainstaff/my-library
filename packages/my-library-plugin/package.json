@@ -6,8 +6,16 @@
   "typings": "./dist/index.d.ts",
   "author": "Alexey Kornilov <alexey.kornilov@kavolorn.ru>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "dependencies": {
+    "@brainstaff/my-library": "^0.2.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.4",
@@ -15,11 +23,5 @@
     "mocha": "^5.2.0",
     "ts-node": "^7.0.0",
     "typescript": "^2.9.2"
-  },
-  "peerDependencies": {
-    "@brainstaff/my-library": "^0.1.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

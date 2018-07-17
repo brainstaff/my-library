@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "node"
   - "10"
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.7.0
@@ -9,7 +8,6 @@ install:
   - yarn install
   - yarn lerna bootstrap
 script:
-  - yarn lerna run clean
-  - yarn lerna exec --scope=@brainstaff/my-library tsc
-  - yarn lerna exec --scope=@brainstaff/my-libary-plugin tsc
-  - yarn lerna run test
+  - yarn clean
+  - yarn build
+  - yarn test
